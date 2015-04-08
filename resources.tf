@@ -23,6 +23,9 @@ resource "aws_subnet" "chartio-public-sn" {
     cidr_block = "10.0.0.0/24"
     availability_zone = "us-west-1a"
     map_public_ip_on_launch = true
+    # Ensure resources with public IPs are destroyed before the Internet
+    # gateway.
+    depends_on = ["aws_internet_gateway.chartio-igw"]
     tags {
         Name = "chartio-public-sn"
     }
