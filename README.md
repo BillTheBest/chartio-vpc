@@ -1,6 +1,6 @@
 # Connecting Chartio to a Database Within an Aamazon VPC
 
-This repo accompanies the tutorial found [here](http://support.chartio.com/connecting-to-a-database-within-an-amazon-vpc).
+This repo accompanies the tutorial found [here](http://support.chartio.com/education/connecting-to-a-database-within-an-amazon-vpc/).
 
 ## Architecture
 
